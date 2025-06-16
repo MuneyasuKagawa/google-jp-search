@@ -78,7 +78,7 @@ _（公開予定）_
 
 バグ報告や機能要望は以下まで：
 
-- GitHub Issues（予定）
+- GitHub Issues
 
 ## 更新履歴
 
