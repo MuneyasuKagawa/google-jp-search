@@ -1,0 +1,58 @@
+{
+  "manifest_version": 3,
+  "name": "Google 日本語検索優先",
+  "version": "1.0",
+  "description": "Googleで漢字を含む検索をした際に、自動的に日本語の検索結果を優先表示します",
+
+  "permissions": ["activeTab", "contextMenus", "storage", "tabs"],
+  
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.google.com/*",
+        "https://www.google.co.jp/*",
+        "https://www.google.co.uk/*",
+        "https://www.google.ca/*",
+        "https://www.google.com.au/*",
+        "https://www.google.de/*",
+        "https://www.google.fr/*",
+        "https://www.google.it/*",
+        "https://www.google.es/*",
+        "https://www.google.com.br/*",
+        "https://www.google.co.in/*",
+        "https://www.google.com.mx/*",
+        "https://www.google.co.kr/*",
+        "https://www.google.nl/*",
+        "https://www.google.pl/*",
+        "https://www.google.com.tr/*",
+        "https://www.google.com.tw/*",
+        "https://www.google.com.hk/*",
+        "https://www.google.com.sg/*",
+        "https://www.google.com.ar/*",
+        "https://www.google.co.th/*",
+        "https://www.google.com.ua/*",
+        "https://www.google.com.vn/*",
+        "https://www.google.com.ph/*",
+        "https://www.google.com.my/*",
+        "https://www.google.co.id/*",
+        "https://www.google.com.eg/*",
+        "https://www.google.com.sa/*",
+        "https://www.google.co.za/*",
+        "https://www.google.com.ng/*",
+        "https://www.google.com.pk/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
