@@ -1,17 +1,17 @@
 {
   "manifest_version": 3,
-  "name": "Google 日本語検索優先",
+  "name": "Google 日本語優先検索",
   "version": "1.0",
   "description": "Googleで漢字を含む検索をした際に、自動的に日本語の検索結果を優先表示します",
 
   "permissions": ["activeTab", "contextMenus", "storage", "tabs"],
-  
+
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
-  
+
   "background": {
     "service_worker": "background.js"
   },
