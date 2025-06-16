@@ -23,6 +23,7 @@ This is a Chrome extension that automatically adds `lr=lang_ja` parameter to Goo
 ### Packaging for Distribution
 
 No build process required - this is a pure JavaScript extension that can be packaged directly:
+
 - Zip the entire directory for Chrome Web Store submission
 - Exclude development files using the included `.gitignore`
 
@@ -89,6 +90,7 @@ Add new domains to the `matches` array in `manifest.json`:
 ## Store Distribution
 
 This extension is ready for Chrome Web Store publication with:
+
 - Complete icon set (16px, 48px, 128px) in `/icons/`
 - Comprehensive README.md with privacy policy
 - No external dependencies or build process required
@@ -96,4 +98,4 @@ This extension is ready for Chrome Web Store publication with:
 
 ## Known Issues
 
-1. Context menu title shows "日本語優先検索" while some docs mention "日本語検索優先" - this is intentional for UI brevity
+1. Context menu title shows "日本語優先検索" while some docs mention "日本語優先検索" - this is intentional for UI brevity
