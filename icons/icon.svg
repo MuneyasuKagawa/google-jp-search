@@ -1,15 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-  <!-- Background circle -->
-  <circle cx="64" cy="64" r="60" fill="#4285F4"/>
-  
-  <!-- Japanese character 日 (sun/day) -->
-  <rect x="38" y="30" width="52" height="68" rx="4" fill="white"/>
-  <rect x="46" y="38" width="36" height="8" fill="#4285F4"/>
-  <rect x="46" y="54" width="36" height="8" fill="#4285F4"/>
-  <rect x="46" y="70" width="36" height="8" fill="#4285F4"/>
-  <rect x="46" y="86" width="36" height="8" fill="#4285F4"/>
-  
-  <!-- Small search icon -->
-  <circle cx="94" cy="94" r="12" fill="white" stroke="#DB4437" stroke-width="3"/>
-  <line x1="103" y1="103" x2="112" y2="112" stroke="#DB4437" stroke-width="3" stroke-linecap="round"/>
+  <!-- Simple magnifying glass - thick white only -->
+  <g>
+    <!-- Glass circle - thick white stroke -->
+    <circle cx="50" cy="50" r="35" fill="none" stroke="white" stroke-width="8"/>
+    
+    <!-- Handle - thick white -->
+    <line x1="74" y1="74" x2="110" y2="110" stroke="white" stroke-width="8" stroke-linecap="round"/>
+  </g>
 </svg>
